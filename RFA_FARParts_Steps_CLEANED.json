@@ -1,0 +1,30 @@
+[
+  {
+    "FAR_Part": "FAR Part 1",
+    "Deadline": "2025-09-30",
+    "GSA_URL": "https://feedback.gsa.gov/jfe/form/SV_6eZqHFGAk8TRtOu",
+    "Explainer_Text": "FAR Part 1 is the foundation of the rulebook. This section establishes the legal and procedural framework for federal procurement, and the proposed changes remove public participation, sunset regulations that protect small businesses, and restructure how the FAR is updated -- all without accountability.",
+    "Comment_Template": "Submitted By:\nName: [FullName], [BusinessTitle]\nCompany: [CompanyName]\nCompany Description: [CompanyDescription]\n\nI am writing in response to the proposed revisions to FAR Part 1. These changes introduce the \u201cRegulatory Sunset\u201d (FAR 1.109), which would cause vital small business protections to expire every four years unless renewed. It also removes the public\u2019s right to participate by eliminating Subpart 1.5.\n\nIn my district ([Your Congressional District]), we\u2019ve already experienced a [Y]% decline in the number of unique small business suppliers since 2008. Removing these foundational safeguards will accelerate the loss of competition and innovation.\n\nThese are not administrative changes \u2014 they represent a fundamental shift away from rule-based governance. Congress should not allow this to proceed without full notice, comment, and oversight."
+  },
+  {
+    "FAR_Part": "FAR Part 6",
+    "Deadline": "2025-08-11",
+    "GSA_URL": "https://feedback.gsa.gov/jfe/form/SV_b42VMwHPhYZBI3Q",
+    "Explainer_Text": "FAR Part 6 governs competition. The proposed changes deprioritize small business set-asides and downgrade the legal authority of the Rule of Two \u2014 a bedrock protection for small businesses. It also weakens internal oversight by minimizing the role of agency Competition Advocates.",
+    "Comment_Template": "Submitted By:\nName: [FullName], [BusinessTitle]\nCompany: [CompanyName]\nCompany Description: [CompanyDescription]\n\nFAR Part 6 governs competition. The proposed changes demote set-asides to a secondary status, directly conflicting with the mandatory Rule of Two. Additionally, the weakening of the agency Competition Advocate\u2019s role removes a key check against bundling and large-scale consolidation.\n\nIn my district ([Your Congressional District]), small businesses received [\\$ amount] in federal contracts. [X]% of that came from set-asides \u2014 yet we've seen a [Y]% decline in the number of unique small business suppliers since 2008. These changes would further disadvantage new entrants and reinforce closed networks."
+  },
+  {
+    "FAR_Part": "FAR Part 10",
+    "Deadline": "2025-07-07",
+    "GSA_URL": "https://feedback.gsa.gov/jfe/form/SV_cvzFajCemh5KtQW",
+    "Explainer_Text": "FAR Part 10 defines the market research process. The proposed changes remove required consultation with Small Business Specialists and lower the bar for commercial market comparisons. This allows agencies to bypass competition and bundle contracts, reducing small business access.",
+    "Comment_Template": "Submitted By:\nName: [FullName], [BusinessTitle]\nCompany: [CompanyName]\nCompany Description: [CompanyDescription]\n\nFAR Part 10 defines the market research process. The deletion of mandatory consultation with Small Business Specialists removes a critical safeguard that ensured early consideration of small business participation. This change will increase contract bundling and diminish competition.\n\nWe\u2019ve already seen a [Y]% decline in small business participation in my district ([Your Congressional District]) since 2008. These changes will make it even harder for small businesses to gain access \u2014 particularly new, innovative firms that aren\u2019t yet on large acquisition vehicles."
+  },
+  {
+    "FAR_Part": "FAR Part 11",
+    "Deadline": "2025-08-04",
+    "GSA_URL": "https://feedback.gsa.gov/jfe/form/SV_3NOkSh292mbBv14",
+    "Explainer_Text": "FAR Part 11 addresses delivery, scheduling, and risk allocation. The proposed changes eliminate key clauses that protect contractors from quantity shifts and performance penalties. These shifts move disproportionate risk onto small businesses, making it harder to bid competitively.",
+    "Comment_Template": "Submitted By:\nName: [FullName], [BusinessTitle]\nCompany: [CompanyName]\nCompany Description: [CompanyDescription]\n\nFAR Part 11 governs performance and delivery terms. The proposed changes remove long-standing protections such as Variation in Quantity clauses, shifting new risk onto contractors.\n\nSmall businesses already face limited margins and volatile cash flow. Removing predictability from the delivery process will increase costs, reduce the number of competitive offers, and further concentrate the supplier base.\n\nIn [Your Congressional District], access to contract performance opportunities must remain predictable and fair if small businesses are to continue participating."
+  }
+]
