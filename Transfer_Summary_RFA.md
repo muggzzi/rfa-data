@@ -100,3 +100,72 @@ This session reflects over 14 hours of collaborative development. The core syste
 Please preserve this summary for all future sessions or developer handoffs.
 
 — *Restore Fair Access™ Project (ChatGPT Assist)*
+
+
+---
+
+## 🛑 Known Issue Log: `/take-action-far-parts` Page (June 30, 2025)
+
+### ❗ Symptoms
+
+- Page remains on “Loading...” with no FAR Part content shown.
+- Submissions made via “I Submitted This Comment”:
+  - ❌ Do **not** log timestamps in `FAR_Submissions` Google Sheet
+  - ❌ Do **not** send confirmation emails to the user
+  - ✅ Console confirms JSON is loaded from GitHub and sessionStorage is correctly populated.
+
+---
+
+### 🔍 Root Cause (In Progress)
+
+1. **Cloudflare Worker proxy endpoint** is accessible:
+   - `https://rfa-far-proxy.muggzzi.workers.dev` tested and confirmed live.
+   - Worker fetch did not originally trigger `doPost(e)` on the Apps Script.
+2. **Google Apps Script Web App** issues:
+   - `Script function not found: doPost` due to misconfigured script project or undeployed changes.
+   - Missing `const lastRow = ...` caused runtime crash: `The number of rows in the range must be at least 1.`
+   - No updates shown in execution log even after correct Web App URL was redeployed.
+3. **Client-side JavaScript issue** in Squarespace:
+   - Error in script:
+     ```js
+     const res = await fetch("await fetch("https://rfa-far-proxy...
+     ```
+     caused JS engine crash due to malformed nested string.
+
+---
+
+### 🔧 Fixes in Progress
+
+- ✅ Script fixed to include `const lastRow = sheet.getLastRow();`
+- ✅ Client script corrected for valid `fetch()` call.
+- ✅ Worker deployed with clean `POST` relay logic.
+- 🔁 To-do:
+  - Verify POSTs to proxy hit Apps Script by inspecting Google Logs.
+  - Trigger new test submissions from Squarespace to confirm logging + email flow.
+  - Add browser-side visual error handling on submission failure.
+
+---
+
+## 📜 Scripts Used (and stored separately for GitHub backup)
+
+### `take-action-far-council.html`
+- Static HTML intake form
+- Geocodio API for district
+- Loads congressional economic data from Google Sheet (gid=443180837)
+
+### `take-action-far-parts.html`
+- Loads comment templates from GitHub JSON
+- Uses Cloudflare Worker for webhook forwarding
+- Tracks progress with sessionStorage
+- Fails gracefully if deadlines have passed
+
+### `google-apps-script.gs`
+- Receives POST from Squarespace via Worker
+- Logs to `FAR_Submissions` tab
+- Sends email to user + BCC to campaign
+
+### `cloudflare-worker.js`
+- Accepts POST from browser
+- Forwards request payload to Google Apps Script `/exec` endpoint
+- Required due to CORS and fetch limitations in Squarespace
+
